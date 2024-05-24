@@ -1,0 +1,20 @@
+graph = 
+{
+    'A':['B','C','D'],
+    'B':['E'],
+    'C':['D','E'],
+    'D':[],
+    'E':[],
+};
+v = set();
+def dfs(v,graph,root):
+
+    if root not in v:
+        print(root);
+        v.add(root);
+    for neighbour in graph[root]:
+        dfs(v,graph,neighbour):
+
+dfs(v,graph,A)
+
+
